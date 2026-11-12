@@ -1,0 +1,105 @@
+/**
+ * Maje Web Sitesi — Tasarım Belirteçleri (Design Tokens)
+ * Sürüm 4 · Kaynak: Bölüm 4.1, 4.2, 4.3, 5
+ * Kural: Tüm renk, tipografi, boşluk ve ölçüler yalnızca bu dosyada tanımlanır.
+ */
+
+:root {
+  /* ==========================================================================
+     4.1 Renk Sistemi
+     ========================================================================== */
+  /* Koyu mürekkep, hafif lacivertli (logodaki "Müşavirlik" yazısına gönderme, saf siyah değil) */
+  --ink: #15152B;
+
+  /* Sıcak kırık beyaz ana zemin */
+  --paper: #FAF8F4;
+
+  /* Bir ton koyu zemin (ayrım ve vurgu bantları için) */
+  --paper-2: #F2EFEB;
+
+  /* İnce ayırıcı çizgiler (ink renginin %12 opaklığı) */
+  --line: rgba(21, 21, 43, 0.12);
+
+  /* İkincil metin ve çizgiler (logodaki gri #7F8383'ün koyulaştırılmış hali, açık zeminde AA kontrastını geçer) */
+  --muted: #5E6262;
+
+  /* Logo rengi: Çizgi grafikler, büyük numaralar, ince çizgiler, büyük dolgu alanları */
+  --accent: #F45F24;
+
+  /* Koyulaştırılmış turuncu: Bağlantılar, küçük etiketler, birincil buton dolgusu (WCAG AA 4.5+:1) */
+  --accent-text: #C44A12;
+
+  /* ==========================================================================
+     4.2 Tipografi Sistemi
+     ========================================================================== */
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Tipografik Ölçek */
+  --font-size-hero: clamp(2.5rem, 1.2rem + 5vw, 5rem);
+  --line-height-hero: 1.05;
+  --letter-spacing-hero: -0.025em;
+
+  --font-size-h2: clamp(1.85rem, 1.1rem + 2.5vw, 3.25rem);
+  --line-height-h2: 1.12;
+  --letter-spacing-h2: -0.02em;
+
+  --font-size-h3: clamp(1.35rem, 1rem + 1vw, 2rem);
+  --line-height-h3: 1.25;
+  --letter-spacing-h3: -0.015em;
+
+  --font-size-h4: 1.25rem;
+  --line-height-h4: 1.35;
+
+  --font-size-body: clamp(1.0625rem, 1rem + 0.25vw, 1.125rem); /* 17–18px */
+  --line-height-body: 1.65;
+  --max-ch-body: 68ch; /* Okuma genişliği 62–68 karakter */
+
+  --font-size-sm: 0.9375rem; /* ~15px */
+  --line-height-sm: 1.5;
+
+  --font-size-label: 0.8125rem; /* ~13px */
+  --line-height-label: 1.3;
+  --letter-spacing-label: 0.08em; /* Geniş harf aralığı */
+
+  /* Ağırlıklar */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* ==========================================================================
+     4.3 Düzen ve Boşluk Sistemi
+     ========================================================================== */
+  --container-max-width: 1116px; /* %100'den %90'a daralma (1240px * 0.9 = 1116px) */
+  --gutter: clamp(20px, 5vw, 72px);
+  --section-gap: clamp(80px, 10vw, 160px);
+
+  /* İç boşluk kademeleri */
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 64px;
+
+  /* Köşeler (4.3 kuralı: Butonlar ve form alanları 8px, diğer yüzeyler 4px) */
+  --radius-sm: 4px;
+  --radius-btn: 8px;
+  --radius-input: 8px;
+
+  /* İnce Çizgi */
+  --border-width: 1px;
+
+  /* ==========================================================================
+     5. Animasyon ve Zamanlama Belirteçleri
+     ========================================================================== */
+  --ease-smooth: cubic-bezier(.22, .61, .36, 1);
+  --duration-hover: 250ms;
+  --duration-hover-slow: 450ms;
+  --duration-entry: 800ms;
+  --duration-fade: 400ms;
+  --duration-pulse: 700ms;
+  --stagger-delay: 100ms;
+}

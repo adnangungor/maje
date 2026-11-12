@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim — Maje</title>
+  <meta name="description" content="Yatırım teşvik belgesi başvuruları, dış ticaret ve gümrük süreçleri için Maje Ankara ve İstanbul ofisleriyle iletişime geçin.">
+  
+  <link rel="canonical" href="https://maje.com.tr/iletisim.html">
+  <link rel="alternate" hreflang="tr" href="https://maje.com.tr/iletisim.html">
+  <link rel="alternate" hreflang="en" href="https://maje.com.tr/en/contact.html">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="İletişim — Maje">
+  <meta property="og:description" content="Projenizi birlikte değerlendirelim. Ankara ve İstanbul ofislerimizle doğrudan görüşme talep edin.">
+  <meta property="og:url" content="https://maje.com.tr/iletisim.html">
+  <meta property="og:image" content="https://maje.com.tr/assets/img/og-image.png">
+
+  <!-- Tasarım Sistemi CSS -->
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+
+  <!-- Üst Bilgi / Header -->
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a href="index.html" class="brand-link" aria-label="Maje Ana Sayfa">
+        <img src="assets/img/maje.png" alt="Maje Logo" class="brand-logo" width="140" height="56">
+      </a>
+
+      <button type="button" class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Menüyü Aç/Kapat">
+        Menü
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Ana Gezinme">
+        <ul class="nav-list">
+          <li><a href="yatirim-tesvik.html" class="nav-link">Yatırım Teşvik</a></li>
+          <li><a href="dis-ticaret-gumruk.html" class="nav-link">Dış Ticaret &amp; Gümrük</a></li>
+          <li><a href="kurumsal.html" class="nav-link">Kurumsal</a></li>
+          <li><a href="iletisim.html" class="nav-link active" aria-current="page">İletişim</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <a href="tel:03124722922" class="header-phone">0312 472 29 22</a>
+          <div class="lang-switch" aria-label="Dil Seçimi">
+            <span class="lang-link active" lang="tr" aria-current="true">TR</span>
+            <span class="lang-divider" aria-hidden="true">|</span>
+            <a href="en/contact.html" class="lang-link" lang="en">EN</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Sayfa Başlığı / Hero (Bölüm 7.5) -->
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <span class="section-tag">Doğrudan İletişim</span>
+        <h1 class="page-hero-title">Projenizi birlikte değerlendirelim.</h1>
+        <p class="page-hero-lead">Yatırım planlarınız, teşvik başvurularınız veya gümrük operasyonlarınız hakkında bilgi almak için formu doldurabilir ya da ofislerimizi arayabilirsiniz.</p>
+      </div>
+    </section>
+
+    <!-- İletişim Ana Alanı (Form ve Ofisler) -->
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- Sol Sütun: Form (Bölüm 7.5) -->
+        <div class="contact-form-area">
+          <div class="section-eyebrow">
+            <span class="section-num">01</span>
+            <span class="section-divider-dash">—</span>
+            <span class="section-category">Talep Formu</span>
+          </div>
+          <h2 style="font-size: var(--font-size-h3); margin-bottom: var(--space-md);">Görüşme Talep Edin</h2>
+
+          <form id="contactForm" action="#" method="POST" novalidate>
+            <!-- Honeypot alanı (Spam bot tuzağı) -->
+            <div class="form-hp" aria-hidden="true">
+              <label for="hp_website">Bu alanı boş bırakın</label>
+              <input type="text" id="hp_website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+              <label for="fullname" class="form-label">Adınız Soyadınız <span style="color: var(--accent-text);">*</span></label>
+              <input type="text" id="fullname" name="fullname" class="form-control" placeholder="Örn. Kerem Aydın" required>
+            </div>
+
+            <div class="form-group">
+              <label for="company" class="form-label">Şirket Ünvanı</label>
+              <input type="text" id="company" name="company" class="form-control" placeholder="Örn. ABC Sanayi A.Ş.">
+            </div>
+
+            <div class="grid-12" style="gap: var(--space-md); margin-bottom: var(--space-md);">
+              <div class="col-6">
+                <label for="email" class="form-label">E-posta Adresi <span style="color: var(--accent-text);">*</span></label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="info@sirketiniz.com" required>
+              </div>
+              <div class="col-6">
+                <label for="phone" class="form-label">Telefon Numarası <span style="color: var(--accent-text);">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="0532 000 00 00" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Görüşme Konusu</label>
+              <select id="subject" name="subject" class="form-control">
+                <option value="yatirim-tesvik">Yatırım Teşvik Müşavirliği</option>
+                <option value="dis-ticaret-gumruk">Dış Ticaret ve Gümrük İşlemleri</option>
+                <option value="diger">Diğer Danışmanlık Talepleri</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Mesajınız / Proje Özeti <span style="color: var(--accent-text);">*</span></label>
+              <textarea id="message" name="message" class="form-control" placeholder="Yatırım tutarı, lokasyonu veya danışmanlık talep ettiğiniz süreci kısaca özetleyebilirsiniz..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-checkbox-label">
+                <input type="checkbox" id="kvkkConsent" name="kvkkConsent" required>
+                <span><a href="kvkk.html" target="_blank" rel="noopener">KVKK Aydınlatma Metni</a>’ni okudum, kişisel verilerimin bu kapsamda işlenmesini onaylıyorum. <span style="color: var(--accent-text);">*</span></span>
+              </label>
+            </div>
+
+            <div style="margin-top: var(--space-lg);">
+              <button type="submit" class="btn btn-primary" style="width: 100%; min-height: 52px; font-size: 1rem;">
+                Görüşme Talebini Gönder
+              </button>
+            </div>
+
+            <div id="formStatus" style="margin-top: var(--space-sm); font-size: 0.875rem; display: none;" role="status"></div>
+          </form>
+        </div>
+
+        <!-- Sağ Sütun: Telefon, E-posta ve Ofis Blokları (Bölüm 7.5) -->
+        <div class="contact-info-area">
+          <div class="section-eyebrow">
+            <span class="section-num">02</span>
+            <span class="section-divider-dash">—</span>
+            <span class="section-category">Merkez ve Şube İletişimi</span>
+          </div>
+
+          <div style="margin-bottom: var(--space-xl); padding-bottom: var(--space-lg); border-bottom: var(--border-width) solid var(--line);">
+            <span class="section-tag">Doğrudan İrtibat</span>
+            <div style="margin-top: var(--space-xs); margin-bottom: var(--space-sm);">
+              <a href="tel:03124722922" style="font-family: var(--font-serif); font-size: clamp(1.75rem, 1.2rem + 1.5vw, 2.5rem); color: var(--ink); text-decoration: none; font-weight: var(--font-weight-regular);">0312 472 29 22</a>
+            </div>
+            <div>
+              <a href="mailto:maje@maje.com.tr" style="font-size: clamp(1.125rem, 1rem + 0.5vw, 1.35rem); color: var(--accent-text);">maje@maje.com.tr</a>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--muted); margin-top: var(--space-xs);">Çalışma Saatleri: Hafta içi ve Cumartesi 09:00 – 18:00</p>
+          </div>
+
+          <!-- Ankara Ofisi -->
+          <div style="margin-bottom: var(--space-lg); padding-bottom: var(--space-md); border-bottom: var(--border-width) solid var(--line);">
+            <h3 style="font-size: 1.25rem; margin-bottom: 6px;">Ankara Merkez Ofisi</h3>
+            <address style="font-style: normal; color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: var(--space-xs);">
+              Beştepeler Mah. Nergiz Sok. No:7/6 Viatower Plaza 5. Kat<br>
+              Söğütözü / ANKARA
+            </address>
+            <div style="display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem;">
+              <a href="tel:03124722922" class="service-view-all">Tel: 0312 472 29 22 <span class="arrow" aria-hidden="true">→</span></a>
+              <span style="color: var(--muted); font-size: 0.875rem;">Faks: 0312 472 09 64</span>
+            </div>
+          </div>
+
+          <!-- İstanbul Ofisi (Levent) -->
+          <div style="margin-bottom: var(--space-lg); padding-bottom: var(--space-md); border-bottom: var(--border-width) solid var(--line);">
+            <h3 style="font-size: 1.25rem; margin-bottom: 6px;">İstanbul Şubesi (Levent)</h3>
+            <address style="font-style: normal; color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: var(--space-xs);">
+              5. Gazeteciler Sit. Yıldırım Oğuz Göker Cad. A10/2<br>
+              Levent / İSTANBUL
+            </address>
+            <div style="display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem;">
+              <a href="tel:02122809493" class="service-view-all">Tel: 0212 280 94 93 <span class="arrow" aria-hidden="true">→</span></a>
+              <span style="color: var(--muted); font-size: 0.875rem;">Faks: 0212 280 94 73</span>
+            </div>
+          </div>
+
+          <!-- İstanbul Ofisi (Maltepe - Gümrük Operasyon) -->
+          <div style="margin-bottom: var(--space-lg); padding-bottom: var(--space-md); border-bottom: var(--border-width) solid var(--line);">
+            <h3 style="font-size: 1.25rem; margin-bottom: 6px;">İstanbul Ofisi (Gümrük Operasyon)</h3>
+            <address style="font-style: normal; color: var(--muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: var(--space-xs);">
+              İdealtepe Mah. Dik Sok. No:1 A Eko Plaza<br>
+              Maltepe / İSTANBUL
+            </address>
+            <div style="display: flex; flex-direction: column; gap: 4px; font-size: 0.9rem;">
+              <a href="tel:02122809493" class="service-view-all">Tel: 0212 280 94 93 <span class="arrow" aria-hidden="true">→</span></a>
+              <span style="color: var(--muted); font-size: 0.875rem;">Faks: 0216 367 38 39</span>
+            </div>
+          </div>
+
+          <!-- Harita: Sayfa açılışında yüklenmez, butona basınca veya bağlantıyla açılır (Bölüm 7.5 kuralı) -->
+          <div class="map-placeholder-box" id="mapBox">
+            <p class="map-placeholder-text">Ofis lokasyonunu harita üzerinde incelemek için:</p>
+            <div class="btn-group" style="justify-content: center; gap: var(--space-sm); flex-wrap: wrap;">
+              <a href="https://maps.google.com/?q=Viatower+Plaza+Söğütözü+Ankara" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="min-height: 40px; font-size: 0.875rem;">
+                Ankara Haritası ↗
+              </a>
+              <a href="https://maps.google.com/?q=5.+Gazeteciler+Sitesi+Levent+İstanbul" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="min-height: 40px; font-size: 0.875rem;">
+                İstanbul Haritası ↗
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Alt Bilgi / Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link" aria-label="Maje Ana Sayfa">
+            <img src="assets/img/maje.png" alt="Maje Logo" class="footer-logo" width="120" height="48">
+          </a>
+          <p class="footer-desc">1992’den beri yatırım teşvik müşavirliği, gümrükleme ve dış ticaret mevzuat danışmanlığı.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Hızlı Gezinme">
+          <h3 class="footer-col-title">Hizmetler</h3>
+          <ul class="footer-nav-list">
+            <li><a href="yatirim-tesvik.html" class="footer-nav-link">Yatırım Teşvik</a></li>
+            <li><a href="dis-ticaret-gumruk.html" class="footer-nav-link">Dış Ticaret &amp; Gümrük</a></li>
+            <li><a href="kurumsal.html" class="footer-nav-link">Kurumsal</a></li>
+            <li><a href="iletisim.html" class="footer-nav-link">İletişim</a></li>
+          </ul>
+        </nav>
+
+        <!-- Ankara Ofisi -->
+        <div class="office-card">
+          <h3 class="footer-col-title">Ankara Ofisi</h3>
+          <p class="office-city">Ankara (Merkez)</p>
+          <address class="office-address">
+            Beştepeler Mah. Nergiz Sok. No:7/6 Viatower Plaza 5. Kat, Söğütözü, 06530
+          </address>
+          <a href="tel:03124722922" class="office-phone">0312 472 29 22</a>
+        </div>
+
+        <!-- İstanbul Levent Ofisi -->
+        <div class="office-card">
+          <h3 class="footer-col-title">İstanbul Ofisi</h3>
+          <p class="office-city">Levent</p>
+          <address class="office-address">
+            5. Gazeteciler Sit. Yıldırım Oğuz Göker Cad. A10/2, Levent
+          </address>
+          <a href="tel:02122809493" class="office-phone">0212 280 94 93</a>
+        </div>
+
+        <!-- İstanbul Maltepe Ofisi (Gümrük Operasyon) -->
+        <div class="office-card">
+          <h3 class="footer-col-title">Gümrük Operasyon</h3>
+          <p class="office-city">Maltepe</p>
+          <address class="office-address">
+            İdealtepe Mah. Dik Sok. No:1 A Eko Plaza, Maltepe
+          </address>
+          <a href="tel:02122809493" class="office-phone">0212 280 94 93</a>
+        </div>
+      </div>
+<div class="footer-bottom">
+        <div class="legal-companies">
+          <span>Maje Gümrük Müşavirliği Limited Şirketi</span> · 
+          <span>Maje Müşavirlik San. ve Tic. Ltd. Şti.</span> · 
+          <a href="kvkk.html">KVKK Aydınlatma Metni</a>
+        </div>
+        <div class="footer-lang">
+          <span lang="tr">Türkçe</span> | <a href="en/contact.html" lang="en">English</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+  <script>
+    (function() {
+      var form = document.getElementById('contactForm');
+      var status = document.getElementById('formStatus');
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+
+          var hp = document.getElementById('hp_website');
+          if (hp && hp.value !== '') {
+            return;
+          }
+
+          var fullname = document.getElementById('fullname').value.trim();
+          var email = document.getElementById('email').value.trim();
+          var phone = document.getElementById('phone').value.trim();
+          var message = document.getElementById('message').value.trim();
+          var kvkk = document.getElementById('kvkkConsent').checked;
+
+          if (!fullname || !email || !phone || !message || !kvkk) {
+            status.style.display = 'block';
+            status.style.color = 'var(--accent-text)';
+            status.textContent = 'Lütfen zorunlu alanları eksiksiz doldurun ve KVKK onay kutusunu işaretleyin.';
+            return;
+          }
+
+          status.style.display = 'block';
+          status.style.color = 'var(--ink)';
+          status.textContent = 'Talebiniz başarıyla alındı. Danışmanlarımız en kısa sürede sizinle iletişime geçecektir.';
+          form.reset();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

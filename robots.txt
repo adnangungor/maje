@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maje.com.tr/sitemap.xml
