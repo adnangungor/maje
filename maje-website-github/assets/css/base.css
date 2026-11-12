@@ -1,0 +1,394 @@
+/**
+ * Maje Web Sitesi — Temel CSS (base.css)
+ * Sürüm 4 · Kaynak: Bölüm 4.2, 4.3, 4.5, 5
+ * Kural: Yalnızca tokens.css değişkenleri kullanılır. Sabit renk/font boyutu yazılmaz.
+ */
+
+/* ==========================================================================
+   Font Yüklemeleri (Self-Hosted WOFF2)
+   ========================================================================== */
+
+/* Hanken Grotesk — Latin-ext (Türkçe karakterler: ğ, ş, ı, İ, ö, ü, ç) */
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/hanken-grotesk-normal-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Hanken Grotesk — Latin */
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/hanken-grotesk-normal-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Hanken Grotesk Italic — Latin-ext */
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/hanken-grotesk-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Hanken Grotesk Italic — Latin */
+@font-face {
+  font-family: 'Hanken Grotesk';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/hanken-grotesk-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader — Latin-ext (Türkçe karakterler) */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/newsreader-normal-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Newsreader — Latin */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/newsreader-normal-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Newsreader Italic — Latin-ext */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/newsreader-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* Newsreader Italic — Latin */
+@font-face {
+  font-family: 'Newsreader';
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('../fonts/newsreader-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* ==========================================================================
+   CSS Sıfırlama ve Kök Ayarları
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 90%; /* %100'den %90'a daralma: Yazı ve tüm rem ölçüleri %10 ölçeklenir */
+  line-height: var(--line-height-body);
+  background-color: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--paper);
+  color: var(--ink);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* ==========================================================================
+   Tipografi Standartları (Bölüm 4.2)
+   ========================================================================== */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: var(--font-weight-regular);
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--font-size-hero);
+  line-height: var(--line-height-hero);
+  letter-spacing: var(--letter-spacing-hero);
+  margin-bottom: var(--space-md);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  letter-spacing: var(--letter-spacing-h2);
+  margin-bottom: var(--space-md);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  letter-spacing: var(--letter-spacing-h3);
+  margin-bottom: var(--space-xs);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
+}
+
+p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--ink);
+  max-width: var(--max-ch-body);
+}
+
+p.lead {
+  font-size: clamp(1.125rem, 1rem + 0.5vw, 1.25rem);
+  line-height: 1.6;
+  color: var(--ink);
+}
+
+p.muted, .text-muted {
+  color: var(--muted);
+}
+
+/* Etiketler (Bölüm 4.2 ve 4.3 kuralı: küçük, büyük harf, geniş harf aralığı) */
+.label, .section-tag {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-label);
+  line-height: var(--line-height-label);
+  letter-spacing: var(--letter-spacing-label);
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: var(--font-weight-medium);
+  display: inline-block;
+}
+
+/* Bölüm Başlığı yanında numara ve etiket (Örnek: 01 — Yatırım Teşvik) */
+.section-header {
+  margin-bottom: var(--space-lg);
+}
+
+.section-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-label);
+  letter-spacing: var(--letter-spacing-label);
+  text-transform: uppercase;
+}
+
+.section-num {
+  color: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+.section-divider-dash {
+  color: var(--muted);
+}
+
+.section-category {
+  color: var(--muted);
+}
+
+/* ==========================================================================
+   Bağlantılar ve Odaklanma (Erişilebilirlik)
+   ========================================================================== */
+a {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color var(--duration-hover) var(--ease-smooth);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-text);
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   Düzen ve Grid Sistemi (Bölüm 4.3)
+   ========================================================================== */
+.container {
+  width: 90%;
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.section {
+  padding-top: var(--section-gap);
+  padding-bottom: var(--section-gap);
+}
+
+.section-sm {
+  padding-top: clamp(40px, 5vw, 80px);
+  padding-bottom: clamp(40px, 5vw, 80px);
+}
+
+/* 12 Kolonlu Esnek Izgara */
+.grid-12 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+}
+
+@media (min-width: 960px) {
+  .grid-12 {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: var(--space-lg);
+    row-gap: var(--space-lg);
+  }
+
+  .col-1 { grid-column: span 1; }
+  .col-2 { grid-column: span 2; }
+  .col-3 { grid-column: span 3; }
+  .col-4 { grid-column: span 4; }
+  .col-5 { grid-column: span 5; }
+  .col-6 { grid-column: span 6; }
+  .col-7 { grid-column: span 7; }
+  .col-8 { grid-column: span 8; }
+  .col-9 { grid-column: span 9; }
+  .col-10 { grid-column: span 10; }
+  .col-11 { grid-column: span 11; }
+  .col-12 { grid-column: span 12; }
+}
+
+/* İnce Ayırıcı Çizgiler (1px line) */
+hr, .divider-line {
+  border: none;
+  border-top: var(--border-width) solid var(--line);
+  margin: 0;
+  width: 100%;
+}
+
+/* ==========================================================================
+   5. Animasyon Stilleri (A1, A2, A3, A4)
+   Kural: Yalnızca html.js sınıfı varken başlangıç durumu uygulanır.
+   JS kapalı veya prefers-reduced-motion durumunda tüm içerik tam görünür.
+   ========================================================================== */
+
+/* A2 — Bölüm Girişi (Yumuşak Yükselme 700–900ms) */
+html.js [data-animate="fade-up"] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity var(--duration-entry) var(--ease-smooth),
+              transform var(--duration-entry) var(--ease-smooth);
+  will-change: opacity, transform;
+}
+
+html.js [data-animate="fade-up"].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* A4 — Dikey Süreç Hattı Adımları */
+html.js .timeline-step {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity var(--duration-entry) var(--ease-smooth),
+              transform var(--duration-entry) var(--ease-smooth);
+}
+
+html.js .timeline-step.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+html.js .timeline-line {
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 600ms var(--ease-smooth) 200ms;
+}
+
+html.js .timeline-step.is-visible .timeline-line {
+  transform: scaleY(1);
+}
+
+/* A1 — Hero Süreç Hattı SVG Düğümleri Belirme ve 700ms Soluk Halka (Bölüm 5) */
+html.js .hero-process-svg .nodes-incentives text,
+html.js .hero-process-svg .nodes-incentives circle,
+html.js .hero-process-svg .nodes-customs text,
+html.js .hero-process-svg .nodes-customs circle {
+  opacity: 0;
+  transition: opacity 400ms var(--ease-smooth);
+}
+
+html.js .hero-process-svg.animated .nodes-incentives text,
+html.js .hero-process-svg.animated .nodes-incentives circle,
+html.js .hero-process-svg.animated .nodes-customs text,
+html.js .hero-process-svg.animated .nodes-customs circle {
+  opacity: 1;
+}
+
+@keyframes nodeHaloPulse {
+  0% {
+    r: 5px;
+    opacity: 0.6;
+    stroke-width: 1.5px;
+  }
+  100% {
+    r: 14px;
+    opacity: 0;
+    stroke-width: 0.5px;
+  }
+}
+
+html.js .hero-process-svg.animated .node-halo {
+  animation: nodeHaloPulse 700ms var(--ease-smooth) forwards;
+}
+
+/* ==========================================================================
+   Erişilebilirlik ve Donanım Tercihleri
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
